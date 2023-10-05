@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view wx:for="{{resultList}}" wx:for-item="item" wx:key="index">
+    <view class="demo-section__content">
+        <t-result theme="{{item.theme}}" title="{{item.title}}" description="{{item.description}}" />
+    </view>
+</view>
+
+<t-divider content="扫描结果参数" align="left" />
+
+<t-cell title="MVSS分数" description="{{mvss}}" />
+<t-cell title="解析结果" description="{{scanResult}}" />
+<t-cell title="域名或IP地址归属地" description="{{ipAddr}}" />
+<t-cell title="风险类型" description="{{risk}}" />
+<t-cell title="解析结果标题" description="{{urltitle}}" />
+<t-cell title="是否涉黄涉黑涉政" description="{{isdfa}}" />
+
+<text>\n</text>
+<t-button theme="light" size="large" bindtap="errorScanPost">报告误报</t-button>

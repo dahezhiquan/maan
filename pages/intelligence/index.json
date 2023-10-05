@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "t-search": "tdesign-miniprogram/search/search",
+        "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
+        "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item",
+        "t-cell": "tdesign-miniprogram/cell/cell",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-switch": "tdesign-miniprogram/switch/switch"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "t-result": "tdesign-miniprogram/result/result",
+        "t-divider": "tdesign-miniprogram/divider/divider",
+        "t-cell": "tdesign-miniprogram/cell/cell",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-switch": "tdesign-miniprogram/switch/switch",
+        "t-button": "tdesign-miniprogram/button/button"
+    }
+}

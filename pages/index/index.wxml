@@ -1,0 +1,35 @@
+<!--index.wxml-->
+
+<t-notice-bar visible="{{true}}" direction="vertical" content="{{content}}" prefixIcon="sound" bind:click="click"></t-notice-bar>
+
+<view class="swiper-box">
+    <t-swiper current="{{1}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" navigation="{{navigation}}" direction="vertical" paginationPosition="{{paginationPosition}}" list="{{swiperList}}">
+    </t-swiper>
+</view>
+
+<t-grid class="block" column="{{3}}">
+    <t-grid-item text="安全扫描" image="{{img1}}" bindtap="securityscan" />
+    <t-grid-item text="情报" image="{{img2}}" bindtap="toIntelligencePage" />
+    <t-grid-item text="我要举报" image="{{img3}}" />
+</t-grid>
+
+<view class="textarea-example">
+    <text class="textarea-example__label">已经有二维码解析数据</text>
+    <t-textarea t-class="external-class" placeholder="请输入二维码解析数据或风险网址" bordered maxlength="1000" disableDefaultPadding="{{true}}" indicator style="{{style}}" model:value="{{qrtextbox}}" />
+</view>
+
+<view class="button-example">
+    <t-button theme="primary" size="large" bindtap="identify" block>智能识别</t-button>
+</view>
+
+<!-- 底部导航栏
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+    <t-tab-bar-item wx:for="{{list}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+        {{item.label}}
+    </t-tab-bar-item>
+</t-tab-bar>
+-->
+
+<view class="footer-example">
+    <t-footer text="{{text}}" links="{{links[0]}}" />
+</view>

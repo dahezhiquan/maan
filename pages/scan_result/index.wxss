@@ -1,0 +1,36 @@
+/**index.wxss**/
+
+/** 结果提示 **/
+.demo-section__content {
+    margin-bottom: 96rpx;
+}
+
+/** 分割线 **/
+.divider-demo__title {
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 16rpx 32rpx;
+    line-height: 40rpx;
+}
+
+.divider-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, 0.9);
+    padding-left: 32rpx;
+}
+
+/** 单元格 **/
+
+.avatar {
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/** 按钮 **/
+.button-example {
+    margin: 0 32rpx;
+}

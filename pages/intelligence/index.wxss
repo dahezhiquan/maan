@@ -1,0 +1,14 @@
+/** 搜索 **/
+
+.example-search {
+    background-color: #fff;
+    padding: 16rpx 32rpx;
+}
+
+/** 内容单元格 **/
+.avatar {
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}

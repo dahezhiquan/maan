@@ -1,0 +1,17 @@
+<view class="example-search">
+    <t-search model:value="{{searchvalue}}" center placeholder="搜索解析内容" bind:change="onChangeSearch" />
+</view>
+
+<t-dropdown-menu>
+    <t-dropdown-item options="{{product.options}}" value="{{product.value}}" bindchange="onChange" />
+    <t-dropdown-item options="{{sorter.options}}" default-value="{{sorter.value}}" bindchange="onChange" />
+</t-dropdown-menu>
+
+<view wx:for="{{intelligenceList}}" wx:key="id">
+    <view wx:if="{{item.mvss >= 60}}">
+        <t-cell title="{{item.risk_type}}" description="{{item.content}}" leftIcon="error-circle-filled" hover arrow />
+    </view>
+    <view wx:else>
+        <t-cell title="{{item.risk_type}}" description="{{item.content}}" leftIcon="close-circle-filled" hover arrow />
+    </view>
+</view>
